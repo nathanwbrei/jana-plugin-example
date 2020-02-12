@@ -1,0 +1,1 @@
+sample_jana_plugin
