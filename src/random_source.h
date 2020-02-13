@@ -13,7 +13,7 @@ private:
     std::mt19937* m_generator;
 
 public:
-    RandomSource(JApplication* app);
+    RandomSource(std::string resource_name, JApplication* app);
 
     virtual ~RandomSource() = default;
 
