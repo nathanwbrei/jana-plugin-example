@@ -23,13 +23,13 @@ TEST_CASE("IntegrationTests") {
     app->Add(processor);
     app->Add(new JFactoryGeneratorT<ShowerFactory>());
 
-    // Tell JANA to only emit some number of events
+    // Limit the number of events
     app->SetParameterValue("nevents", 10);
 
     // Run everything, blocking until finished
     app->Run();
 
-    // Make assertions about the data
+    // Verify the results you'd expect
     REQUIRE(app->GetNeventsProcessed() == 10);
 
 }

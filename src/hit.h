@@ -16,6 +16,11 @@ struct Hit : public JObject {
     double E;  // Energy loss in GeV
     double t;  // Time in ms
 
+
+    /// Make it convenient to construct one of these things
+    Hit(int x, int y, double E, double t) : x(x), y(y), E(E), t(t) {};
+
+
     /// Override className to tell JANA to store the exact name of this class where we can
     /// access it at runtime. JANA provides a NAME_OF_THIS macro so that this will return the correct value
     /// even if you rename the class using automatic refactoring tools.

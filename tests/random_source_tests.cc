@@ -2,7 +2,7 @@
 #include "catch.hpp"
 #include "random_source.h"
 
-TEST_CASE("RandomSource does something") {
+TEST_CASE("RandomSourceTests") {
 
     REQUIRE(true == true);
 }
